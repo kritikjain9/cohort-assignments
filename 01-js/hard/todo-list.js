@@ -11,6 +11,19 @@
 */
 
 class Todo {
+  todos = [];
+
+  add(todo){
+    this.todos = [this.todos, todo]
+  }
+
+  remove(todoIndex){
+    this.todos = this.todos.filter((todo, i) => {
+      return i != todoIndex;
+    })
+  }
+
+  
 
 }
 
